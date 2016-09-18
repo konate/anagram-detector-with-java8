@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 /**
  * AnagramDetector utilizes Java SE 8 Streams
  * 
@@ -38,8 +39,8 @@ public class AnagramDetector {
 		}
 		
 		//Anagram comparison is done character by character
-		boolean result = str1.chars() // Parallel InStream of Characters values
-		    		.allMatch( c1 -> str2.chars() // Parallel InStream of Characters values
+		boolean result = str1.chars() // Parallel Stream of Characters
+		    		.allMatch( c1 -> str2.chars() // Parallel Stream of Characters
 		    				         .anyMatch(c2 -> c1 == c2) ); 
 		    		
 	    return result;

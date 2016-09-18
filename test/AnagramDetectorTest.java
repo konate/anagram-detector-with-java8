@@ -5,8 +5,8 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
-
 import org.junit.Rule;
+
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
@@ -17,7 +17,7 @@ public class AnagramDetectorTest {
      public ExpectedException thrown= ExpectedException.none();
 
 	@Test
-	public void testIsAnagramOf() {
+	public void testIsAnagramOf_v1() {
 		
 	//string1 and string2 are anagram of each other
 	   String string1 = "actmoM";
